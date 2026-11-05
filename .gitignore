@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Environment variables - NEVER upload secrets
+.env
+.env.*
+!.env.example
+
+# Build files
+dist/
+
+# Logs
+*.log
+
+# Editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

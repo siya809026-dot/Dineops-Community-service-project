@@ -1,0 +1,19 @@
+# Render Blueprint (optional): New + -> Blueprint, pick this repo.
+services:
+  - type: web
+    name: dineops-api
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CLIENT_URL
+        value: https://dineops-phi.vercel.app
