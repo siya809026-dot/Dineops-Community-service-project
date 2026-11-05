@@ -1,7 +1,7 @@
 // Single source of truth for the backend URL.
 // Set VITE_API_URL in Vercel (Project -> Settings -> Environment Variables)
 // e.g. https://dineops-1iov.onrender.com/api
-const DEFAULT_API_URL = "https://dineops-1iov.onrender.com/api";
+const DEFAULT_API_URL = "https://dineops-community-service-project-1.onrender.com/";
 
 const rawUrl = (import.meta.env.VITE_API_URL || DEFAULT_API_URL).trim();
 
